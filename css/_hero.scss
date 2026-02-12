@@ -1,0 +1,261 @@
+.hero__section--inner {
+  @include between;
+  position: relative;
+}
+
+.hero__title--underline {
+  display: none;
+}
+
+.hero__section {
+  background: white url("../resources/pictures/hero/Group.png") no-repeat top right / 25rem;
+  padding: 3rem 0 11rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.hero__title {
+  font-weight: 600;
+  font-size: 7.5rem;
+  line-height: 120%;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #141416;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 13.8rem;
+    position: absolute;
+    height: 1px;
+    opacity: 0.5;
+    background-color: #201f1f;
+    top: -1rem;
+  }
+}
+
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 156%;
+  text-align: justify;
+  color: #676767;
+  margin: 4.5rem 0;
+  width: 50rem;
+
+  span {
+    font-weight: 600;
+    color: #141416;
+  }
+}
+
+.hero__button-box {
+  width: 34rem;
+  @include between;
+}
+
+.hero__digits--list {
+  margin-top: 8.2rem;
+  width: 45.3rem;
+  @include between;
+}
+
+.hero__digit {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 125%;
+  color: #141416;
+}
+
+.hero__digit--description {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 150%;
+  color: #848586;
+}
+
+.hero__img--box {
+  width: 78rem;
+  height: 55rem;
+  display: flex;
+  align-items: end;
+  position: relative;
+
+  @include unselectable;
+}
+
+.img__clone {
+  position: absolute;
+  background: transparent url(../resources/pictures/nft-pictures/Mask%20Group-1.svg) no-repeat center/cover;
+  width: 33rem;
+  height: 33rem;
+  top: 5rem;
+  left: -2rem;
+  z-index: 1;
+  display: block;
+  filter: brightness(0.8) saturate(500%) blur(128.700302px);
+  
+}
+
+.swiper {
+  position: absolute;
+  width: 38rem;
+  height: auto;
+  left: -2rem;
+  top: 0;
+
+}
+
+.swiper-2 {
+  position: absolute;
+  width: 32rem;
+  height: auto;
+  right: 1rem;
+  bottom: 7rem;
+  transform: translateX(50%);
+}
+
+.swiper__button-box {
+  width: 16rem;
+  height: 6.7rem;
+  background-color: #fcfcfd;
+  border-radius: 17px;
+  box-shadow: 0 43px 16px -26px rgba(15, 15, 15, 0.12);
+  @include between;
+  padding: 2rem 0rem 0;
+  @include unselectable;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  content: '';
+}
+
+.hero__arrow {
+  position: static;
+  width: 50%;
+  height: 140%;
+
+
+  svg {
+    width: 2rem;
+    color: #929292;
+  }
+
+  &:active {
+    box-shadow: inset -4px -4px 6px -1px white, inset 2px 2px 8px -1px rgba(72, 79, 96, 0.5);
+    border-color: rgba(255, 255, 255, 0);
+
+    svg {
+      color: black;
+    }
+  }
+}
+
+.swiper-button-prev {
+  border-radius: 17px 0 0 17px;
+}
+
+.swiper-button-next {
+  border-radius: 0 17px 17px 0;
+}
+
+@include mini-tablet {
+  .hero__section--inner {
+    flex-direction: column;
+  }
+
+  .hero__section {
+    padding: 7rem 0 11.3rem;
+    background: white url(../resources/pictures/hero/Group.png) no-repeat 100% 50rem/17rem;
+  }
+
+  .hero__section {
+    height: fit-content;
+  }
+
+  .hero__title {
+    font-size: 4.7rem;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    width: 30rem;
+
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
+
+  .hero__digits--list {
+    display: none;
+  }
+
+  .hero__subtitle {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 156%;
+    text-align: center;
+    color: #676767;
+    width: 31.5rem;
+  }
+
+  .hero__img--box {
+    width: 100%;
+    height: 50rem;
+    margin-top: 7rem;
+  }
+
+  .swiper {
+    width: 33rem;
+    height: 33rem;
+    left: 0;
+  }
+
+  .swiper-2 {
+    width: 28rem;
+    height: auto;
+    bottom: 0;
+    right: -1rem;
+  }
+
+  .img__clone {
+    width: 27rem;
+    height: 15rem;
+    top: 18rem;
+    left: 3rem;
+    filter: brightness(0.8) saturate(500%) blur(101.700302px);
+  }
+
+  .hero__content--box {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__title--underline {
+    display: block;
+    width: 15.3rem;
+    font-size: 0.9rem;
+    line-height: 120%;
+    letter-spacing: 0.13em;
+    color: #201f1f;
+    @include between;
+
+    div {
+      display: block;
+      width: 4rem;
+      height: 1px;
+      background-color: #201f1f;
+      opacity: 0.5;
+    }
+  }
+}
+
+
+
+
+

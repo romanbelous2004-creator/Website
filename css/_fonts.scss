@@ -1,0 +1,7 @@
+@include textSettings('Poppins', 100, '../resources/fonts/Poppins-Thin.woff2', 'woff2');
+@include textSettings('Poppins', 200, "../resources/fonts/Poppins-Light.woff", 'woff');
+@include textSettings('Poppins', 300, "../resources/fonts/Poppins-Medium.woff", 'woff');
+@include textSettings('Poppins', 400, '../resources/fonts/Poppins-Regular.woff2', 'woff2');
+@include textSettings('Poppins', 500, '../resources/fonts/Poppins-SemiBold.woff2', 'woff2');
+@include textSettings('Poppins', 600, '../resources/fonts/Poppins-Bold.woff2', 'woff2');
+@include textSettings('Poppins', 700, '../resources/fonts/Poppins-Black.woff2', 'woff2');
